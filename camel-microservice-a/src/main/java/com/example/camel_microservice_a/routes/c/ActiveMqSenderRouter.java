@@ -29,6 +29,5 @@ public class ActiveMqSenderRouter extends RouteBuilder {
         from("file:files/xml")
                 .log("${body}")
                 .to("activemq:active-mq-xml-queue");
-
     }
 }
